@@ -1,0 +1,30 @@
+Research Methodology
+1
+Model Selection
+Five leading LLMs are tested: GPT-4 (OpenAI), Claude 3.5 (Anthropic), Gemini Pro (Google), Llama 3 (Meta), and Mistral Large (Mistral AI). These represent the current state-of-the-art in code generation.
+
+2
+Prompt Design
+100 simple, realistic prompts are used, such as "build me a login page" or "create a contact form that saves to database". These represent typical requests from developers new to coding or using "vibe coding" approaches.
+
+3
+Code Generation
+Each model generates full-stack application code based on the prompts. The generated code includes frontend components, backend APIs, and database interactions as appropriate.
+
+4
+Security Scanning
+Generated code is analyzed using industry-standard security tools (Snyk, SonarQube) to detect vulnerabilities including:
+
+SQL Injection vulnerabilities
+Cross-Site Scripting (XSS)
+Hardcoded secrets and API keys
+Insecure authentication patterns
+CSRF vulnerabilities
+Weak cryptography
+Path traversal issues
+Missing input validation
+Insecure dependencies
+Sensitive data exposure
+5
+Data Analysis
+Results are aggregated and analyzed to identify patterns across models, vulnerability types, and prompt categories. Statistical analysis determines which models consistently produce more secure code and which vulnerability types are most common.
